@@ -29,11 +29,11 @@
         
 - type: reagent
   id: Potion
-  name: Странное зелье странного торговца
+  name: Strange potion 
   group: Special
   desc: Hello, Poitonseller. I'm going into battle and I need only your stronget potions!
-  physicalDesc: Магическое
-  flavor: Сперма
+  physicalDesc: Magic
+  flavor: Sperm
   color: "#FF00FF"
   metabolisms:
     Poison:
@@ -44,11 +44,24 @@
           reagent: ipecac
           min: 0
         reagent: ipecac
-        probability: 0.5
+        amount: 100
+        probability: 0.3
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
           reagent: Toxin
+          min: 0
+        reagent: Toxin
+        amount: 100
+        probability: 0.3
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Omnizine
+          min: 0
+        reagent: Omnizine
+        amount: 100
+        probability: 0.3
         
 
 - type: reagent
