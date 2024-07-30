@@ -41,9 +41,9 @@
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
-          reagent: ipecac
+          reagent: Ipecac
           min: 0
-        reagent: ipecac
+        reagent: Ipecac
         amount: 100
         probability: 0.3
       - !type:AdjustReagent
