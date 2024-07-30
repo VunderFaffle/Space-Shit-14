@@ -26,6 +26,30 @@
           min: 1
         reagent: CarpoToxin
         amount: -3
+        
+- type: reagent
+  id: Potion
+  name: Странное зелье странного торговца
+  group: Special
+  desc: Hello, Poitonseller. I'm going into battle and I need only your stronget potions!
+  physicalDesc: Магическое
+  flavor: Сперма
+  color: "#FF00FF"
+  metabolisms:
+    Poison:
+      effects:
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: ipecac
+          min: 0
+        reagent: ipecac
+        probability: 0.5
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Toxin
+        
 
 - type: reagent
   id: Fiber
